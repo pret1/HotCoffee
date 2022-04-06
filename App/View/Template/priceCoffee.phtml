@@ -1,6 +1,9 @@
 <?php require_once('header.phtml'); ?>
+<?php $calculation = new \App\DB\TableCoffee();
+$result = $calculation->execute($_POST);
+?>
 <div>
     <h1>Price coffee</h1>
-    <p>Get your coffee for <?php echo $_GET['result']; ?> EU</p>
+    <p>Get your coffee for <?php echo $result; ?> EU</p>
 </div>
-<?php require_once ('footer.phtml'); ?>
+<?php require_once('footer.phtml'); ?>

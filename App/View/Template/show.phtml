@@ -2,11 +2,11 @@
 <div class="hotCoffee">
     <h1>HotCoffee APP</h1>
     <div class="hotCoffeeForm">
-        <form method="post" action="calculate" name="addForm">
+        <form method="post" action="cook" name="addForm">
             <p>If you want to cook coffee fill the fields and press send</p>
             <label>Country<input type="text" name="country" placeholder="enter Spain or Italy"></label>
-            <label>Syrup<input type="text" name="syrup" placeholder="enter yes or no"></label>
-            <label>Addition<input type="text" name="addition" placeholder="enter yes or no"></label>
+            <label>Syrup<input type="checkbox" name="syrup"></label>
+            <label>Addition<input type="checkbox" name="addition"></label>
             <input type="submit" value="Send">
         </form>
     </div>

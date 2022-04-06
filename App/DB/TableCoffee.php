@@ -19,20 +19,20 @@ class TableCoffee
         ];
         if ($all['country'] == $db[0]['country']) {
             $result += $db[0]['price'];
-            if ($all['syrup'] == 'yes') {
+            if ($all['syrup'] == 'on') {
                 $result += $db[0]['syrup'];
             }
-            if ($all['addition'] == 'yes') {
+            if ($all['addition'] == 'on') {
                 $result += $db[0]['addition'];
             }
             $tax = $result * $db[0]['tax'];
             $result = $tax + $result;
         } else {
             $result += $db[1]['price'];
-            if ($all['syrup'] == 'yes') {
+            if ($all['syrup'] == 'on') {
                 $result += $db[1]['syrup'];
             }
-            if ($all['addition'] == 'yes') {
+            if ($all['addition'] == 'on') {
                 $result += $db[1]['addition'];
             }
             $tax = $result * $db[1]['tax'];

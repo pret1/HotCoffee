@@ -6,7 +6,7 @@ namespace App\Controller;
 
 use App\View\Output;
 
-class Cook
+class Cook implements ControllerInterface
 {
     /**
      * @return void
