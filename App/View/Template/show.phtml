@@ -1,0 +1,14 @@
+<?php require_once('header.phtml'); ?>
+<div class="hotCoffee">
+    <h1>HotCoffee APP</h1>
+    <div class="hotCoffeeForm">
+        <form method="post" action="calculate" name="addForm">
+            <p>If you want to cook coffee fill the fields and press send</p>
+            <label>Country<input type="text" name="country" placeholder="enter Spain or Italy"></label>
+            <label>Syrup<input type="text" name="syrup" placeholder="enter yes or no"></label>
+            <label>Addition<input type="text" name="addition" placeholder="enter yes or no"></label>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</div>
+<?php require_once('footer.phtml'); ?>

@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Output;
+use App\View\Output;
 
 /**
  * Class Main - Homepage
  */
-class Main
+class Main implements ControllerInterface
 {
     /**
      * @return void
@@ -17,6 +17,6 @@ class Main
     public function execute(): void
     {
         $show = new Output();
-        $show->renderPhtml('View/show.phtml');
+        $show->renderPhtml('Template/show.phtml');
     }
 }
