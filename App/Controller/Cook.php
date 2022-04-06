@@ -8,7 +8,10 @@ use App\View\Output;
 
 class Cook
 {
-    public function execute()
+    /**
+     * @return void
+     */
+    public function execute(): void
     {
         $show = new Output();
         $show->renderPhtml('Template/priceCoffee.phtml');

@@ -4,21 +4,20 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\DB\TableCoffee;
+
 class Calculate
 {
-    public function execute()
+    /**
+     * @return void
+     */
+    public function execute(): void
     {
         $all = $_POST;
-        $result = 0;
-
-        if ($all[0] == 'Spain') {
-            $result += 1;
-            if ($all[1] == 'yes') {
-                $result += 0.5;
-            }
-            if ($all[2] == 'yes') {
-                $result +=
-            }
-        }
+        $calculate = new TableCoffee();
+        $result = $calculate->execute($all);
+        header("location: cook?result=$result");
+        exit();
     }
+
 }
